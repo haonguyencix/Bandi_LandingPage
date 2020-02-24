@@ -5422,8 +5422,6 @@ header {
         outline: none; }
       header nav .toggle__icon {
         color: #fff; }
-    header nav #close-toggle {
-      display: none; }
 
 footer {
   background-color: #0eb493;
