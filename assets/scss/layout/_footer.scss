@@ -1,31 +1,34 @@
 footer {
-  background-color: $primary-green;
   width: 100%;
+  background-color: $primary-green;
   &::before {
     content: "";
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #062033;
+    background-color: $very-dark-blue;
   }
-  div.footer-wrapper {
-    width: 75%;
+  div.footer__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
     padding: 96px 0;
-    margin: 0 auto;
-    color: $color-default-lightest;
     @media #{$info-tablet-horizontal} {
-      width: 85%;
       padding: 46px 0;
+      grid-template-columns: repeat(2, 1fr);
     }
     @media #{$info-tablet-vertical} {
-      width: 95%;
       padding: 16px 0;
     }
-    div.footer-item {
+    @media #{$info-phone} {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    div.footer__item {
       height: 180px;
       @include flex();
       flex-direction: column;
       justify-content: space-between;
+      color: $color-default-lightest;
       @media #{$info-tablet-horizontal} {
         height: 135px;
       }
@@ -58,7 +61,7 @@ footer {
           @include font-size(13px);
           line-height: 1.7;
           &.created-by {
-            border-left: 1px solid #000;
+            border-left: 1px solid $color-default-darkest;
             padding-left: 16px;
             > span {
               color: $color-default-darkest;
