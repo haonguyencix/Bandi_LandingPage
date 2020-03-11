@@ -4,7 +4,7 @@ $(document).ready(function() {
     let slideArr = ["slider-01.png", "slider-02.png", "slider-01.png"];
     slideArr.map(item => {
       content += `
-      <div class="slide" style="background-image: url('../../assets/img/${item}')">
+      <div class="slide" style="background-image: url('assets/img/${item}')">
         <div class="slide__text">
           <h1>Meet <span>Brandi</span>!</h1>
           <h2><span>/creative</span> one page template.</h2>
@@ -38,7 +38,7 @@ $(document).ready(function() {
     featureArr.map(item => {
       content += `
       <div class="features__item">
-        <div class="item__icon" style="background-image: url(../../assets/img/${item.icon})"></div>
+        <div class="item__icon" style="background-image: url('assets/img/${item.icon}')"></div>
         <div class="item__content">
           <h2>${item.title}</h2>
           <p>
@@ -90,7 +90,7 @@ $(document).ready(function() {
     teamArr.map(item => {
       content += `
       <div class="team__item">
-        <div class="item__avatar" style="background-image: url(../../assets/img/${item})">
+        <div class="item__avatar" style="background-image: url('assets/img/${item}')">
           <div class="overlay">
             <div class="overlay__text">
               <h6>Nemo enim ipsam voluptatem quia voluptas</h6>
