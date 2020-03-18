@@ -1,14 +1,16 @@
 .works {
   padding-top: 94px;
   background-color: $color-default-lightest;
+  &__title {
+    margin-bottom: 26px;
+  }
   &__text {
     @include font-size(18px);
     width: 62%;
     margin: 0 auto;
     text-align: center;
     font-weight: 600;
-    padding-top: 26px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     line-height: 1.3;
   }
   ul.nav-pills {

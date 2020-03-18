@@ -14,8 +14,10 @@
     height: 100%;
     z-index: -1;
   }
+  &__title {
+    margin-bottom: 20px;
+  }
   &__items {
-    padding: 20px 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     @media #{$info-tablet-vertical} {
