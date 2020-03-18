@@ -1,8 +1,11 @@
 .features {
   background-color: #f4f7f9;
-  padding: 70px;
+  padding: 70px 0;
+  &__title {
+    margin-bottom: 70px;
+  }
   &__items {
-    padding: 70px 0;
+    padding-bottom: 70px;
     .features__item {
       @include flex();
       > div.item__icon {

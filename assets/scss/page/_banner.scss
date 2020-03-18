@@ -87,6 +87,7 @@
     width: 113px;
     left: 50%;
     top: 91vh;
+    z-index: 6;
     @include transform(translateX(-50%));
     list-style: none;
     @include flex();

@@ -13,10 +13,10 @@ $(document).ready(function() {
       </div>
       `;
     });
-    $("section.banner").html(content);
+    $("div.slides").html(content);
   })();
 
-  $("section.banner").slick({
+  $("div.slides").slick({
     arrows: false,
     dots: true,
     fade: true
